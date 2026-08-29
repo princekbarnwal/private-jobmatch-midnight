@@ -1,0 +1,144 @@
+{
+  "compiler-version": "0.31.1",
+  "language-version": "0.23.0",
+  "runtime-version": "0.16.0",
+  "circuits": [
+    {
+      "name": "setJobRequirements",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "minExperience",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 255
+          }
+        },
+        {
+          "name": "requiresDegree",
+          "type": {
+            "type-name": "Boolean"
+          }
+        },
+        {
+          "name": "requiresJavaScript",
+          "type": {
+            "type-name": "Boolean"
+          }
+        },
+        {
+          "name": "maxSalary",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 4294967295
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "checkMatch",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "name": "getExperience",
+      "arguments": [
+      ],
+      "result type": {
+        "type-name": "Uint",
+        "maxval": 255
+      }
+    },
+    {
+      "name": "getHasDegree",
+      "arguments": [
+      ],
+      "result type": {
+        "type-name": "Boolean"
+      }
+    },
+    {
+      "name": "getHasJavaScript",
+      "arguments": [
+      ],
+      "result type": {
+        "type-name": "Boolean"
+      }
+    },
+    {
+      "name": "getExpectedSalary",
+      "arguments": [
+      ],
+      "result type": {
+        "type-name": "Uint",
+        "maxval": 4294967295
+      }
+    }
+  ],
+  "contracts": [
+  ],
+  "ledger": [
+    {
+      "name": "minimumExperience",
+      "index": 0,
+      "exported": true,
+      "storage": "Cell",
+      "type": {
+        "type-name": "Uint",
+        "maxval": 255
+      }
+    },
+    {
+      "name": "degreeRequired",
+      "index": 1,
+      "exported": true,
+      "storage": "Cell",
+      "type": {
+        "type-name": "Boolean"
+      }
+    },
+    {
+      "name": "javascriptRequired",
+      "index": 2,
+      "exported": true,
+      "storage": "Cell",
+      "type": {
+        "type-name": "Boolean"
+      }
+    },
+    {
+      "name": "maximumSalary",
+      "index": 3,
+      "exported": true,
+      "storage": "Cell",
+      "type": {
+        "type-name": "Uint",
+        "maxval": 4294967295
+      }
+    },
+    {
+      "name": "lastMatch",
+      "index": 4,
+      "exported": true,
+      "storage": "Cell",
+      "type": {
+        "type-name": "Boolean"
+      }
+    }
+  ]
+}

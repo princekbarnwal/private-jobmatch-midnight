@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["contracts/jobmatch.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAAA;;;;;;;;;;;;;;;;;;;;;;MA8BA,AAAA,kBAUC;;;;;cATG,eAAsB;cACtB,gBAAuB;cACvB,oBAA2B;cAC3B,WAAmB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;yCAHnB,eAAsB,+BACtB,gBAAuB,+BACvB,oBAA2B,+BAC3B,WAAmB;;;;;;;;;oDAHnB,eAAsB;oDACtB,gBAAuB;oDACvB,oBAA2B;oDAC3B,WAAmB;;;OAMtB;MAMD,AAAA,UAyBC;;;;;;;;;;;;;;;;;;;;;;OAAA;;;;;;;;;;GACA;EAxED;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAQA;;;;;;;;;yEAAyC;IACzC;;;;;;;;;yEAAsC;IACtC;;;;;;;;;yEAA0C;IAC1C;;;;;;;;;yEAAsC;IAItC;;;;;;;;;yEAAiC;;;;;;;GAyDhC;EAnDD,AAAA,gBAAiC;;0DAAjC,aAAiC;;;;;;;;;;;;;;GAAA;EACjC,AAAA,eAAgC;;0DAAhC,YAAgC;;;;;;;;;;;;;;GAAA;EAChC,AAAA,mBAAoC;;0DAApC,gBAAoC;;;;;;;;;;;;;;GAAA;EACpC,AAAA,oBAAsC;;0DAAtC,iBAAsC;;;;;;;;;;;;;;GAAA;EAMtC,AAAA,qBAUC;;wBATG,eAAsB;wBACtB,gBAAuB;wBACvB,oBAA2B;wBAC3B,WAAmB;;IAEnB;;;;;;;2HAA6B,eAAa;;yEAAzB;IACjB;;;;;;;2HAA0B,gBAAc;;yEAA1B;IACd;;;;;;;2HAA8B,oBAAkB;;yEAA9B;IAClB;;;;;;;2HAAyB,WAAS;;yEAArB;;GAChB;EAMD,AAAA,aAyBC;UAxBS,YAA4B;UAC5B,WAA0B;UAC1B,eAAkC;UAClC,gBAAoC;UAEpC,mBAC6B,GAA/B,YAAU;;wDAAI;;;;;;;;;;;6HAAiB;UAE7B,eAC0B,4BAA3B;;;;;;;;;;;0HAAc;;4BAAI,WAAS;UAE1B,mBACkC,4BAAnC;;;;;;;;;;;8HAAkB;;gCAAI,eAAa;UAElC,eAC6B,GAA/B,gBAAc;;oDAAI;;;;;;;;;;;yHAAa;UAE7B,SAIW,GAHb,mBAAiB,IACjB,eAAa;;sBACb,mBAAiB;;sBACjB,eAAa;IAEjB;;;;;;;2HAAqB,SAAO;;yEAAnB;;GACZ;;;;;;;;;;;;;;;;IA/DD;qCAAA;;;;;;;;;;;0GAAyC;KAAA;IACzC;qCAAA;;;;;;;;;;;0GAAsC;KAAA;IACtC;qCAAA;;;;;;;;;;;0GAA0C;KAAA;IAC1C;qCAAA;;;;;;;;;;;0GAAsC;KAAA;IAItC;qCAAA;;;;;;;;;;;0GAAiC;KAAA;;;;;;;;;;;;;;;"
+}

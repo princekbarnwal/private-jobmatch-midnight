@@ -1,0 +1,72 @@
+pragma language_version >= 0.23;
+
+import CompactStandardLibrary;
+
+// ─────────────────────────────────────────────
+// PUBLIC JOB REQUIREMENTS
+// ─────────────────────────────────────────────
+
+export ledger minimumExperience: Uint<8>;
+export ledger degreeRequired: Boolean;
+export ledger javascriptRequired: Boolean;
+export ledger maximumSalary: Uint<32>;
+
+// Result of the most recent match.
+// Public: anyone can see whether a match was accepted.
+export ledger lastMatch: Boolean;
+
+// ─────────────────────────────────────────────
+// PRIVATE CANDIDATE DATA
+// ─────────────────────────────────────────────
+
+witness getExperience(): Uint<8>;
+witness getHasDegree(): Boolean;
+witness getHasJavaScript(): Boolean;
+witness getExpectedSalary(): Uint<32>;
+
+// ─────────────────────────────────────────────
+// CREATE / UPDATE JOB REQUIREMENTS
+// ─────────────────────────────────────────────
+
+export circuit setJobRequirements(
+    minExperience: Uint<8>,
+    requiresDegree: Boolean,
+    requiresJavaScript: Boolean,
+    maxSalary: Uint<32>
+): [] {
+    minimumExperience = disclose(minExperience);
+    degreeRequired = disclose(requiresDegree);
+    javascriptRequired = disclose(requiresJavaScript);
+    maximumSalary = disclose(maxSalary);
+}
+
+// ─────────────────────────────────────────────
+// PRIVATE MATCH CHECK
+// ─────────────────────────────────────────────
+
+export circuit checkMatch(): [] {
+    const experience = getExperience();
+    const hasDegree = getHasDegree();
+    const hasJavaScript = getHasJavaScript();
+    const expectedSalary = getExpectedSalary();
+
+    const experienceMatches =
+        experience >= minimumExperience;
+
+    const degreeMatches =
+        !degreeRequired || hasDegree;
+
+    const javascriptMatches =
+        !javascriptRequired || hasJavaScript;
+
+    const salaryMatches =
+        expectedSalary <= maximumSalary;
+
+    const matches =
+        experienceMatches &&
+        degreeMatches &&
+        javascriptMatches &&
+        salaryMatches;
+
+    lastMatch = disclose(matches);
+}
